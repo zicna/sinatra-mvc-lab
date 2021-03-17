@@ -2,14 +2,12 @@ class PigLatinizer
 
     attr_accessor :text
 
-    def initialize(text)
-        @text = text
-    end
+    # def initialize(text)
+    #     @text = text
+    # end
 
-    def piglatinize
-       text.split(" ").map do |word|
-        piglatinize_single_word(word)
-       end.join(" ")
+    def piglatinize(text)
+       text.split(" ").map {|word| piglatinize_single_word(word)}.join(" ")
     end
 
     def piglatinize_single_word(word)
