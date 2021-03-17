@@ -2,10 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Pig Latinazer</title>
+    <style>
+      form div, h1 {
+        text-align: center;
+        font-weight: bolder;
+        padding: 5px;
+      }
+      #user_phrase{
+        border: 2px solid black;
+      }
+    </style>
   </head>
   <body>
-    <h1>Pig Latinizer</h1>
+    <h1>Pig Latinizer!</h1>
+    <form action="/piglatinize" method="POST">
+      <div>
+        <label>Enter your phrase:</label>
+      </div>
+      <div>
+        <input type="text"name="user_phrase" id="user_phrase">
+      </div>
+      <div>
+      <input type="submit" name="submit">
+      </div>
+    </form>
   
   </body>
 </html>
